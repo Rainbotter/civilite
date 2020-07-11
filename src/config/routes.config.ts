@@ -18,8 +18,8 @@ export class Routes {
         app.route("/info").get((req, res) => this.infoController.getInfo(req, res));
         app.route("/ping").get((req, res) => this.infoController.getPing(req, res));
 
+        // Civilites
         app.route("/civilite").get((req, res) => this.civiliteController.getCivilites(req, res));
-
 
     }
 

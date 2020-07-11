@@ -4,17 +4,16 @@
     "emitDecoratorMetadata": true,
     "module": "commonjs",
     "esModuleInterop": true,
-    "target": "ES6",
+    "target": "ES5",
     "moduleResolution": "node",
     "sourceMap": true,
     "outDir": "dist",
-    "removeComments": false
+    "removeComments": true,
+    "jsx": "preserve",
+    "allowJs": true
   },
   "exclude": [
     "node_modules",
     "dist"
-  ],
-  "lib": [
-    "es2015"
   ]
 }
