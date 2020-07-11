@@ -1,0 +1,8 @@
+GET http://{{host}}/ping
+Accept: application/json
+
+###
+GET http://{{host}}/info
+Accept: application/json
+
+###
