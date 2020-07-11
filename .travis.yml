@@ -1,0 +1,13 @@
+sudo: required
+language: node_js
+node_js:
+  - "14"
+
+services:
+  - docker
+
+script:
+  - ./scripts/build.sh
+
+after_success:
+  - ./scripts/deploy.sh
