@@ -4,3 +4,5 @@ COPY dist /app
 WORKDIR /app
 
 CMD node server.js
+
+EXPOSE 3000
