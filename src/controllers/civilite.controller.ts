@@ -8,7 +8,7 @@ import {CiviliteService} from "../services/civilite.service";
 @autoInjectable()
 export class CiviliteController extends Controller {
 
-    private logger: Logger = container.resolve(LoggerService).getLogger(this.constructor.name);
+    private logger: Logger = container.resolve(LoggerService).getLogger("CiviliteController");
     private civiliteService: CiviliteService = container.resolve(CiviliteService);
 
     public getCivilites(req: Request, res: Response): void {

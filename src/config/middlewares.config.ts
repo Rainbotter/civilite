@@ -3,11 +3,10 @@ import {ErrorResponse} from "../models/responses/error.responses";
 import {Logger} from "winston";
 import {container} from "tsyringe";
 import {LoggerService} from "../services/logger.service";
-import {Application} from "../application";
 
 export class Middlewares {
 
-    private logger: Logger = container.resolve(LoggerService).getLogger(Application.name);
+    private logger: Logger = container.resolve(LoggerService).getLogger("Application");
 
     /**
      * This should be the last "app.use" in order to work properly

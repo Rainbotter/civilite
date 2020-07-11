@@ -9,7 +9,7 @@ import {Controller} from "./controller";
 @autoInjectable()
 export class InfoController extends Controller {
 
-    private logger: Logger = container.resolve(LoggerService).getLogger(this.constructor.name);
+    private logger: Logger = container.resolve(LoggerService).getLogger("InfoController");
     private applicationInfoService: ApplicationInfoService = container.resolve(ApplicationInfoService);
 
     public getInfo(req: Request, res: Response): void {

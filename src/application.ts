@@ -15,7 +15,7 @@ export class Application {
 
     private appPort: string = process.env.PORT || DEFAULT_PORT;
 
-    private logger: Logger = container.resolve(LoggerService).getLogger(this.constructor.name);
+    private logger: Logger = container.resolve(LoggerService).getLogger("Application");
 
     constructor() {
         this.logger.info("App is starting");

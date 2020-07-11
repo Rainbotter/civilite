@@ -7,7 +7,7 @@ import {CiviliteController} from "../controllers/civilite.controller";
 
 export class Routes {
 
-    private logger: Logger = container.resolve(LoggerService).getLogger(this.constructor.name);
+    private logger: Logger = container.resolve(LoggerService).getLogger("Routes");
 
     private infoController: InfoController = container.resolve(InfoController);
     private civiliteController: CiviliteController = container.resolve(CiviliteController);
