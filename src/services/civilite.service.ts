@@ -30,14 +30,14 @@ export class CiviliteService {
             translations: {
                 "fr": "Yoda",
                 "en": "Master",
-                "de": "Meister"
+                "de": "YaegerMeister"
             }
         } as Civilite);
 
         result.push({
             code: "i18n.civility.DOCTEUR",
             translations: {
-                "fr": "Docteur",
+                "fr": "Docteur La Peluche",
                 "en": "Doctor",
                 "de": "Klaus Barbie"
             }
